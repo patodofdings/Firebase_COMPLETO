@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/input_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|textCapWords"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/input_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/input_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Enviar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Contactos"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lista_contactos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/texto_vacio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No hay contactos todavía" />
+    </FrameLayout>
+</LinearLayout>

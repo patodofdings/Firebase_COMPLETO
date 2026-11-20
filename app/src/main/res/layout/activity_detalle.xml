@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detalle_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detalle_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detalle_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar" />
+
+    <Button
+        android:id="@+id/btn_eliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar" />
+</LinearLayout>
